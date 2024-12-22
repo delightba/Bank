@@ -1,0 +1,161 @@
+/* Reset all margins and paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: #000000; /* Black background for the whole page */
+  color: #fff; /* White text */
+}
+
+/* Specific styles for your home page */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw; /* Ensure full width of the viewport */
+}
+
+.notification {
+  background-color: #f4e1c1;  /* Cream color */
+  color: #333;  /* Dark text */
+  padding: 10px 20px;  /* Space around the text */
+  text-align: center;  /* Center align text */
+  font-size: 16px;
+  margin-top: 60px;
+  display: inline-block;  /* Make the notification fit content */
+  border-radius: 5px;  /* Optional: add rounded corners */
+  margin-left: auto; /* Center the notification horizontally */
+  margin-right: auto; /* Center the notification horizontally */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainContent {
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  margin-top: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+h2 {
+ font-size: 60px;
+ padding-left: 20px;
+ margin-bottom: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Content Layout */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items are vertically centered */
+  margin-top: 20px;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 10px; /* Reduced bottom margin */
+  padding-bottom: 0; /* Remove bottom padding to ensure alignment */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-content p{
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #f4e1c1;
+  padding-top: 10px; /* Reduced padding to bring button closer */
+  margin-top: 10px;  /* Fine-tune button positioning */
+  margin-left: 27px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.image-container img {
+  padding-bottom: 0; /* Remove padding at the bottom */
+  margin-top: 0; /* Ensure no margin is pushing the image down */
+  max-width: 100%;
+  height: auto;
+  width: 500px; /* Adjust this value as needed */
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+.downloads{
+  padding-left: 50px;
+}
+.playstore{
+  padding-left: 40px;
+}
+
+/* Base style for links */
+.learnMoreLink {
+  color: #ffae42;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Base style for buttons */
+button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 15px; /* Makes the edges round */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Login button with only border */
+.login-button {
+  border: 2px solid #ffae42;  /* Border with #ffae42 */
+  background-color: transparent;
+  color: #ffae42;  /* Text color matching the border */
+}
+
+.login-button:hover {
+  color: #ffae42;  /* Change text color on hover */
+  border-color: #ffae42;  /* Change border color on hover */
+}
+
+/* Sign-Up button with background color */
+.signup-button {
+  background-color: #ffae42;  /* Background color for Sign-Up */
+  color: #fff;
+}
+
+.signup-button:hover {
+  background-color: #000000;  /* Change background to black on hover */
+  color: #fff;  /* Keep text color white */
+}
